@@ -1,21 +1,34 @@
-NEXORA DIGITAL — READY WEBSITE
-=================================
+WEBSKY WEBSITE - UPLOAD & LAUNCH GUIDE
+======================================
 
-Files:
-- index.html
-- style.css
-- script.js
+Files included:
+- index.html, about.html, services.html, guardio.html, contact.html
+- privacy-policy.html, terms.html, disclaimer.html, cookie-policy.html, refund-policy.html
+- assets/style.css and assets/script.js
+- contact.php (PHP mail contact form)
+- robots.txt and sitemap.xml
 
 UPLOAD:
-1. Create your subdomain in cPanel, e.g. digital.yourdomain.com
-2. Open the subdomain's document root.
-3. Upload all 3 files into that folder.
-4. Visit the subdomain.
+1. Extract this ZIP on your computer.
+2. Upload ALL files and the assets folder into the document root for websky.in (often public_html).
+3. Ensure index.html is directly inside the document root, not inside an extra nested folder.
+4. Enable SSL/HTTPS in your hosting control panel.
+5. Visit https://websky.in and test every page and link.
+6. Test the contact form. The server must support PHP mail(). If it does not, configure authenticated SMTP with your hosting provider or ask a developer to adapt the form.
+7. Submit https://websky.in/sitemap.xml in Google Search Console after the site is live.
 
-NOTES:
-- No database or SQL required.
-- Pure HTML/CSS/JavaScript.
-- Contact form is front-end only. Connect it to your PHP mail handler or a form service before going live.
-- Replace hello@nexoradigital.in and +91 98765 43210 with your actual details.
-- Replace WhatsApp number in index.html.
-- Replace portfolio text/images as required.
+IMPORTANT BEFORE PUBLIC LAUNCH:
+- Verify the supplied email address: sopport@websky.com (spelling supplied by the site owner).
+- Verify the supplied phone number: +11 8084448575. Confirm the correct country code and whether this number can receive calls.
+- "India" is not a complete postal/business address. Add the real, serviceable business address and any legally required business identity details if applicable. Do not invent an address.
+- Add a real business/operator identity and accurate contact details. A website alone cannot guarantee Google Ads approval.
+- This is an independent Guardio information website. It does NOT represent Guardio, sell subscriptions, collect Guardio payments, provide Guardio support, or claim authorised-reseller status.
+- No fabricated testimonials, ratings, prices, discounts, customer counts, certifications or performance guarantees are included.
+- Guardio features may change. Verify details on https://guard.io/ and https://help.guard.io/ before editing product claims.
+- The privacy and cookie policies describe the supplied website version. If you add analytics, ad pixels, affiliate tracking, embedded third-party tools, or other data collection, update these policies and implement any required consent before use.
+- The contact form currently uses PHP mail(). Delivery depends on your host's mail configuration; a successful form submission is not a guarantee of inbox delivery.
+
+Google Ads note:
+No website can guarantee approval. Review the current Google Ads Misrepresentation and Destination Requirements policies:
+https://support.google.com/adspolicy/answer/6020955
+Make sure your ads accurately describe the website, all links work, the operator identity and contact details are truthful, and any commercial relationship or payment terms are clearly disclosed.
