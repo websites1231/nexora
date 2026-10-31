@@ -1,7 +1,0 @@
-const menuBtn=document.querySelector('.menu-btn');const nav=document.querySelector('#navMenu');menuBtn?.addEventListener('click',()=>nav.classList.toggle('open'));document.querySelectorAll('#navMenu a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
-
-const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-
-const counters=document.querySelectorAll('[data-count]');let counted=false;const countObserver=new IntersectionObserver(entries=>{if(entries[0].isIntersecting&&!counted){counted=true;counters.forEach(el=>{const target=parseFloat(el.dataset.count),suffix=target===4.8?'x':target===96?'%':'+';let start=0;const duration=1200;const t0=performance.now();function tick(now){const p=Math.min((now-t0)/duration,1);const v=start+(target-start)*(1-Math.pow(1-p,3));el.textContent=(target%1?v.toFixed(1):Math.round(v))+suffix;if(p<1)requestAnimationFrame(tick)}requestAnimationFrame(tick)})}},{threshold:.4});const numbers=document.querySelector('.numbers');if(numbers)countObserver.observe(numbers);
-
-const form=document.querySelector('#contactForm');form?.addEventListener('submit',e=>{e.preventDefault();const msg=document.querySelector('#formMessage');msg.textContent='Thanks! Your enquiry is ready. Connect this form to your email/PHP backend to receive submissions.';form.reset();});
